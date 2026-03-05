@@ -1,6 +1,8 @@
-dist = 150
-vel = 60
+dist = float(input("Insira a distancia percorrida em km: "))
+vel = float(input("Insira a velocidade média em km/h: "))
 
-h = 150/60
+tempo = dist/vel
+h = int(tempo)
+m = int((tempo - h) * 60)
 
-print(f"O carro levou ",h," horas para percorrer ",dist,"Km")
+print(f"Tempo estimado: {h}:{m}")
