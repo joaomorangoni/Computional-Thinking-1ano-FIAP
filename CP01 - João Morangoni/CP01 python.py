@@ -130,6 +130,21 @@ print("Usuário logado!")
 # ====================================== EX08 ======================================
 # Crie um programa em Python que registre 3 notas de alunos, garantindo que 
 # cada nota seja válida, use as estruturas de laço for e while.
+print("------- EX08 -------")
+notas = []
+
+for i in range (1,4):
+    valida = False
+    nota = 0
+    while valida == False:
+        nota = float(input("insira a nota do aluno: "))
+        if nota > 0 and nota < 11:
+            notas.append(nota)
+            valida = True
+        else:
+            print("Insira uma nota válida")
+
+print(f"As notas dos alunos são {notas:.1f}")
 
 # ==================================== FIM EX08 ====================================
 
