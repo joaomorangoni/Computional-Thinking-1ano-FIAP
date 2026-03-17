@@ -53,18 +53,19 @@ comprado = []
 print("ID dos produtos:\n 1 - Leite\n 2 - Maçã\n 3 - Macarrão\n 4 - Queijo\n 5 - Presunto")
 for i in range(1,6):
     id = int(input("digite o id dos produtos comprados: "))
-    if id == 1:
-        comprado.append(disponivel[0])
-    elif id == 2:
-        comprado.append(disponivel[1])
-    elif id == 3:
-        comprado.append(disponivel[2])
-    elif id == 4:
-        comprado.append(disponivel[3])
-    elif id == 5:
-        comprado.append(disponivel[4])
-    else: 
-        print("id não encontrado")
+    match id:
+        case 1:
+            comprado.append(disponivel[0])
+        case 2:
+            comprado.append(disponivel[1])
+        case 3:
+            comprado.append(disponivel[2])
+        case 4:
+            comprado.append(disponivel[3])
+        case 5: 
+            comprado.append(disponivel[4])
+        case _:
+            print("id não encontrado")  
 
 print(f"Os produtos comprados são: {comprado}")
 # ==================================== FIM EX04 ====================================
