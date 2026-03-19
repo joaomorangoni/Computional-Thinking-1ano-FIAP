@@ -1,0 +1,21 @@
+1 - Prompt Injection #
+
+A injeção direta de prompts ocorre quando um invasor insere explicitamente um 
+prompt malicioso no campo de entrada do usuário em um aplicativo com inteligência 
+artificial. Basicamente, o atacante fornece instruções diretamente que substituem 
+as instruções do sistema definidas pelo desenvolvedor.
+
+2 - Sensitive Information Disclosure #
+
+O modelo cospe informações confidenciais, PII, 
+segredos corporativos, chaves API ou até system 
+prompts que vazaram no output.
+
+3 - Supply Chain Vulnerabilities #
+
+Dependências comprometidas: modelos baixados de Hugging Face, 
+plugins, embeddings, datasets públicos ou até provedores de API 
+de terceiros com backdoor.
+
+4 - 
+
